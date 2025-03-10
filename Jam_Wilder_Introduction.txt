@@ -1,0 +1,4 @@
+Hello, my name is Jam. I am a senior computer science student at CWU eager to learn system programming. 
+I enjoy solving complex problems and developing innovative solutions. This project has given me an opportunity to explore file system operations in depth.
+I plan on hopefully making my own operating system one day, as well as implement machine learning into the ECU's of cars one day.
+I really want to graduate and start working in the industry as soon as possible and start working on my own goals on the side, and also keep learning. 
