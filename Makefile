@@ -1,22 +1,23 @@
 CC = gcc
 CFLAGS = -std=c17 -Wall -Wextra -pedantic
-OBJ = libFS.o testFS.o
-TARGET = testFS
+OBJ = Jam_libFS.o Jam_testFS.o
+TARGET = Jam_testFS
 
 all: $(TARGET)
 
 $(TARGET): $(OBJ)
 	$(CC) $(CFLAGS) -o $(TARGET) $(OBJ)
 
-libFS.o: libFS.c libFS.h
-	$(CC) $(CFLAGS) -c libFS.c
+Jam_libFS.o: Jam_libFS.c Jam_libFS.h
+	$(CC) $(CFLAGS) -c Jam_libFS.c
 
-testFS.o: testFS.c libFS.h
-	$(CC) $(CFLAGS) -c testFS.c
+Jam_testFS.o: Jam_testFS.c Jam_libFS.h
+	$(CC) $(CFLAGS) -c Jam_testFS.c
 
 	# Run both programs
 run: all
-	./testFS
+	./Jam_testFS
 
 clean:
 	rm -f $(OBJ) $(TARGET)
+	rm -f *.txt

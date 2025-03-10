@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 /* Define a type for our file pointer */
 typedef FILE* FS_FILE;
 

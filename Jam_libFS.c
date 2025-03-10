@@ -1,4 +1,4 @@
-#include "libFS.h"
+#include "Jam_libFS.h"
 #include <errno.h>
 
 FS_FILE fileCreate(const char *filename) {
